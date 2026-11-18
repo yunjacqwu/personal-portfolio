@@ -11,12 +11,12 @@ interface CertificatesProps {
 
 // Data sementara (Ganti link Unsplash ini dengan link foto sertifikat asli Anda nanti)
 const certificates = [
-  { id: 1, alt: "Sertifikat Responsive Web Design", img: "images/certificate/freecodecamp.webp" },
-  { id: 2, alt: "Sertifikat UIUX Bootcamp", img: "images/certificate/uiux.webp" },
-  { id: 3, alt: "Sertifikat Bootstrap", img: "images/certificate/bootstrap.webp" },
-  { id: 4, alt: "Sertifikat ReactJS", img: "images/certificate/react.webp" },
-  { id: 5, alt: "Sertifikat Junior Web Developer", img: "images/certificate/webdev.webp" },
-  { id: 6, alt: "Sertifikat Frontend Developer", img: "images/certificate/frontend.webp" },
+  { id: 1, alt: "Sertifikat 1 Algorithm", img: "images/certificate/algorithm.png" },
+  //{ id: 2, alt: "Sertifikat 2", img: "images/certificate/" },
+  //{ id: 3, alt: "Sertifikat 3", img: "images/certificate/" },
+  //{ id: 4, alt: "Sertifikat 4", img: "images/certificate/" },
+  //{ id: 5, alt: "Sertifikat 5", img: "images/certificate/" },
+  //{ id: 6, alt: "Sertifikat 6", img: "images/certificate/" },
 ];
 
 export default function Certificates({ dict }: CertificatesProps) {

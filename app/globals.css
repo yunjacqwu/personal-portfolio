@@ -93,7 +93,7 @@ body {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-brand-blue), var(--color-brand-purple), var(--color-brand-pink));
+  background: linear-gradient(90deg, #f97316, var(--color-brand-amber, #f59e0b));
   z-index: 9999;
   transition: width 0.05s linear;
 }

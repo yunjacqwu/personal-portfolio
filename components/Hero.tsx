@@ -51,7 +51,7 @@ export default function Hero({ dict }: HeroProps) {
           </p>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight text-brand-text">
-            Muhammad <span className="text-shimmer">Febriansyah</span>.
+            Muhammad <span className="text-orange-500">Febriansyah</span>.
           </h1>
 
           <p className="text-2xl font-bold text-brand-text/90">
@@ -82,7 +82,7 @@ export default function Hero({ dict }: HeroProps) {
 
           <div className="flex flex-wrap gap-4 pt-4">
             <MagneticButton strength={0.25}>
-              <a href="#projects" className="inline-flex items-center gap-2 px-8 py-3 bg-brand-purple hover:bg-brand-purple/90 text-white font-black rounded-full shadow-md transition-colors text-base">
+              <a href="#projects" className="inline-flex items-center gap-2 px-8 py-3 bg-brand-text hover:bg-orange-500 text-white font-black rounded-full shadow-md hover:shadow-orange-500/25 transition-all duration-300 text-base">
                 <Briefcase className="w-5 h-5" /> {dict.ctaProjects}
               </a>
             </MagneticButton>
@@ -115,7 +115,7 @@ export default function Hero({ dict }: HeroProps) {
           >
             {/* Glow via box-shadow — not affected by overflow clipping */}
             <motion.div
-              className="relative aspect-[3/4] w-full max-w-sm rounded-[32px] overflow-hidden shadow-[0_0_40px_rgba(168,85,247,0.35),0_0_80px_rgba(99,102,241,0.2)] border border-white/20"
+              className="relative aspect-[3/4] w-full max-w-sm rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(15,23,42,0.25),0_0_40px_rgba(249,115,22,0.2)] border border-white/20"
               style={{ rotateX, rotateY }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >

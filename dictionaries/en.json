@@ -16,7 +16,7 @@
     "greeting": "I AM",
     "name": "MUHAMMAD FEBRIANSYAH",
     "role": "FULLSTACK DEVELOPER",
-    "bio": "As an Information Systems graduate and Software Engineer, I specialize in translating complex business needs into efficient web applications.\n\nFrom digitizing operational workflows to architecting frontend interfaces, I thrive on building scalable full-stack solutions from the ground up that deliver real-world impact.",
+    "bio": "As an Informatics Engineering graduate with a strong interest in Software Engineering and Web Development, I enjoy building web applications that solve practical problems. \n\n I have hands-on experience creating web-based systems, including security reporting and pensioner membership monitoring applications. I am passionate about learning new technologies and developing efficient, user-friendly, and secure software solutions.",
     "downloadCv": "DOWNLOAD CV"
   },
   "skills": {
@@ -29,30 +29,30 @@
     "technologiesLabel": "Technologies Used",
     "list": [
       {
-        "company": "PT Advics Manufacturing Indonesia",
-        "role": "Fullstack Developer",
-        "period": "Aug 2025 - Feb 2026",
-        "location": "Karawang, Indonesia",
+        "company": "PT Telkom Witel Jakarta Centrum",
+        "role": "Web Developer Intern",
+        "period": "Apr 2025 - Jul 2025",
+        "location": "Jakarta, Indonesia",
         "description": [
-          "Replaced paper-based processes by developing an NG Scanning System (QR integration) and an automated Scrap Evidence document pipeline.",
-          "Architected scalable applications (Warehouse Engineering, IT Asset Management, and Help Desk) adapting to Laravel and ReactJS ecosystems.",
-          "Ensured high-speed data handling for thousands of concurrent records using advanced techniques like lazy loading in heavy-asset environments.",
-          "Revamped legacy interfaces with Tailwind CSS, delivering fully responsive and intuitive tools for both office executives and factory-floor personnel."
+          "Developed a web-based Security Report application to support security reporting and information management.",
+          "Contributed to designing and implementing application features based on organizational requirements.",
+          "Built functional and user-friendly web interfaces to support reporting workflows.",
+          "Collaborated with team members to ensure the application met operational needs and requirements."
         ],
-        "technologies": ["Laravel", "ReactJS", "Tailwind CSS", "MySQL", "PostgreSQL"]
+        "technologies": ["React.js", "Node.js", "Express.js", "Tailwind CSS", "MySQL", "JWT", "Figma", "Postman", "GitHub"]
       },
       {
-        "company": "Vocasia",
-        "role": "Frontend Developer",
-        "period": "Jan 2025 - Jun 2025",
+        "company": "Dana Pensiun Pegawai Perum Peruri (DAPETRI)",
+        "role": "Freelance Web Developer",
+        "period": "Apr 2026 - Jun 2026",
         "location": "Remote",
         "description": [
-          "Transformed complex UI/UX designs into responsive, mobile-first web components with strict cross-browser compatibility.",
-          "Successfully delivered 8+ major frontend tasks within a fast-paced environment, utilizing modern frameworks to enhance platform capabilities.",
-          "Actively participated in weekly technical sprints and synchronization meetings to align development workflows with business goals.",
-          "Recognized with a Certificate of Appreciation for consistently delivering clean, maintainable code ahead of project deadlines."
+          "Designed and developed a web-based pensioner membership monitoring system.",
+          "Implemented AES-256 encryption to protect sensitive personal information.",
+          "Built features for pensioner data management, document administration, and attendance monitoring.",
+          "Implemented role-based access control and audit logging to support application security and activity tracking."
         ],
-        "technologies": ["NextJS", "TypeScript", "Tailwind CSS", "Gitlab", "Figma"]
+        "technologies": ["PHP", "Tailwind CSS", "MySQL", "Alpine.js", "Balsamiq"]
       }
     ]
   },

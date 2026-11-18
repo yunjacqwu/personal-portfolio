@@ -28,10 +28,10 @@ export default function About({ dict }: AboutProps) {
           className="relative w-full max-w-xs md:max-w-sm shrink-0"
         >
           {/* Aksen Background Solid */}
-          <div className="absolute inset-0 bg-brand-amber/15 rounded-[32px] transform translate-x-4 translate-y-4 -rotate-3" />
+          <div className="absolute inset-0 bg-zinc-800/10 rounded-[32px] transform translate-x-4 translate-y-4 -rotate-3" />
 
           {/* Frame Foto Utama */}
-          <div className="relative aspect-[4/5] bg-white rounded-[32px] shadow-xl border border-brand-text/5 overflow-hidden z-10">
+          <div className="relative aspect-[4/5] bg-purple-50/70 rounded-[32px] shadow-xl border border-brand-purple/15 overflow-hidden z-10">
             <Image
               src="/images/about1.jpg"
               alt="Profil"
@@ -78,8 +78,8 @@ export default function About({ dict }: AboutProps) {
           {/* Tombol Container */}
           <div className="pt-2">
             <a
-              href="/CV-DeftValianExanova.pdf"
-              download="CV-DeftValianExanova.pdf"
+              href="/CV-Muhammad-Febriansyah.pdf"
+              download="CV-Muhammad-Febriansyah.pdf"
               // fix for button clipping: make horizontal padding responsive (px-6 -> px-8)
               className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-3.5 bg-brand-text text-white font-black rounded-full shadow-md hover:bg-brand-purple hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >

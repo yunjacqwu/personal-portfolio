@@ -14,22 +14,22 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://deftvalian.vercel.app"),
   title: {
-    default: "Deft Valian Exanova | Fullstack Developer",
-    template: "%s | Deft Valian Exanova",
+    default: "Muhammad Febriansyah | Fullstack Developer",
+    template: "%s | Muhammad Febriansyah",
   },
   description:
     "Website portofolio personal Fullstack Developer yang colorful dan interaktif.",
   openGraph: {
-    title: "Deft Valian Exanova | Fullstack Developer",
+    title: "Muhammad Febriansyah | Fullstack Developer",
     description: "Portofolio interaktif dan modern dari seorang Fullstack Developer.",
     url: "/",
-    siteName: "Deft Valian Exanova",
+    siteName: "Muhammad Febriansyah",
     images: [
       {
         url: "/images/hero.webp",
         width: 1200,
         height: 630,
-        alt: "Deft Valian Exanova Portfolio Thumbnail",
+        alt: "Muhammad Febriansyah Portfolio Thumbnail",
       },
     ],
     locale: "id_ID",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deft Valian Exanova | Fullstack Developer",
+    title: "Muhammad Febriansyah | Fullstack Developer",
     description: "Portofolio interaktif dan modern dari seorang Fullstack Developer.",
     images: ["/images/hero.webp"],
   },
