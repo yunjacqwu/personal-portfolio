@@ -14,6 +14,7 @@ export default function Navbar({ locale }: NavbarProps) {
   
   const isClickScrolling = useRef(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const scrollFrame = useRef<number | null>(null);
 
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -51,7 +52,32 @@ export default function Navbar({ locale }: NavbarProps) {
     window.location.href = `/${nextLocale}${currentHash}`;
   };
 
-  const handleNavLinkClick = (id: string) => {
+  // Scroll animasi manual (ease in-out), tidak bergantung pada scroll-behavior CSS
+  const smoothScrollTo = (id: string) => {
+    const target = document.getElementById(id);
+    if (!target) return;
+    const startY = window.scrollY;
+    // Berhenti sedikit di atas section supaya tidak ketutup navbar (navbar ada di atas di desktop)
+    const navOffset = window.innerWidth >= 768 ? 96 : 0;
+    const distance = target.getBoundingClientRect().top - navOffset; // jarak dari posisi sekarang ke section
+    const duration = 800;
+    const startTime = performance.now();
+
+    if (scrollFrame.current) cancelAnimationFrame(scrollFrame.current);
+    const step = (now: number) => {
+      const p = Math.min((now - startTime) / duration, 1);
+      const eased = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+      // "instant" dipaksa supaya scroll-behavior: smooth dari CSS tidak ikut menganimasi tiap frame
+      window.scrollTo({ top: startY + distance * eased, behavior: "instant" as ScrollBehavior });
+      if (p < 1) scrollFrame.current = requestAnimationFrame(step);
+    };
+    scrollFrame.current = requestAnimationFrame(step);
+  };
+
+  const handleNavLinkClick = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    smoothScrollTo(id);
+    history.replaceState(null, "", `#${id}`);
     setActiveSection(id);
     isClickScrolling.current = true;
 
@@ -78,7 +104,7 @@ export default function Navbar({ locale }: NavbarProps) {
         {/* Logo */}
         <a 
           href="#home" 
-          onClick={() => handleNavLinkClick("home")}
+          onClick={(e) => handleNavLinkClick(e, "home")}
           className="font-black text-lg md:text-xl tracking-tighter px-2 text-brand-text hover:scale-105 transition-transform"
         >
           MF<span className="text-brand-pink">.</span>
@@ -95,7 +121,7 @@ export default function Navbar({ locale }: NavbarProps) {
             <a 
               key={item.id} 
               href={item.path} 
-              onClick={() => handleNavLinkClick(item.id)} 
+              onClick={(e) => handleNavLinkClick(e, item.id)}
               className="relative px-3 md:px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition-colors text-brand-text"
               title={item.name}
             >
